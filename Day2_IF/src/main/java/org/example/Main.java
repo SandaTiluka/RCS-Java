@@ -9,11 +9,18 @@ public class Main {
         task2();
     }
 
+    public static void task4(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet vārdu");
+
+        if(b.equals("bbb"){
+            System.out.println("ir vienāds");
+        }
+    }
     public static void task2(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet skaitli");
         int a = sc.nextInt();
-
 
         if(a > 5){
             System.out.println("###");
