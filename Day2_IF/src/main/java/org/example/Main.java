@@ -6,9 +6,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-      sample2();
     }
+      sample3();
+
+            public static void sample3(){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Ievadiet skaitli 1");
+                int a = sc.nextInt();
+
+
+                if(a > 0){
+                    System.out.println("Jā");
+                }else if(a < 0){
+                    System.out.println("Nē");
+                }else{
+                    System.out.println("Kluda");
+                }
+            }
+
+
 
     public static void sample2() {
         Scanner sc = new Scanner(System.in);
