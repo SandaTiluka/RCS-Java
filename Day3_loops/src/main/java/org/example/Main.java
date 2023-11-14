@@ -13,12 +13,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         for(int i = 0; i < 5; i++){
             System.out.println("Ievadiet skaitli");
-            if(int > 0){
-                System.out.println(int);
+            int a = sc.nextInt();
+            if(a > 0){
+                System.out.println(a);
             }else{
                 System.out.println("Kļūda");
             }
-            System.out.println("Kopā" + int);
+            System.out.println("Kopā" + a);
         }
     }
 
