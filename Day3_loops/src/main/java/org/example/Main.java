@@ -5,14 +5,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task1();
+        task2();
     }
 
-    public static void task1(){
+    public static void task2(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ievadiet skaitli");
-        for(int i = 0; i < 7; i+5);
-        System.out.println(i);
+
+
+        int sum = 0;
+        for(int i = 0; i < 5; i++){
+            System.out.println("Ievadiet vārdu");
+            String name = sc.nextLine();
+            int garums = name.length();
+            sum = sum + garums;
+            System.out.println("---");
+        }
+        System.out.println("Summa ir" + sum);
 
     }
 
