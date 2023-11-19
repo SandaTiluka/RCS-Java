@@ -15,14 +15,15 @@ public class Main {
 
             int input = 0;
             int last = 0;
-            
+
 
 
             while(input >= last){
+                last = input + 0;
                 System.out.println("Ievadiet skaitli!");
                 input = sc.nextInt();
                 System.out.println(input);
-                last = input + 0;
+
 
 
                 if(input < 0){
