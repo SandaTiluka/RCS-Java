@@ -17,7 +17,6 @@ public class Main {
             int last = 0;
 
 
-
             while(input >= last){
                 last = input + 0;
                 System.out.println("Ievadiet skaitli!");
@@ -25,8 +24,7 @@ public class Main {
                 System.out.println(input);
 
 
-
-                if(input < 0){
+                if(input < last){
                     break;
                 }
 
