@@ -3,8 +3,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-
-        sample1(String a = "aaaa", String b = "bbbb",String c = "cccc");
+        String a = "aaaa";
+        String b = "bbbb";
+        String c = "cccc";
+        sample1(a,b,c);
 
 
     }
