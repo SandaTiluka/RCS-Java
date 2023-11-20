@@ -7,8 +7,8 @@ public class Main {
 //        String b = "bbbb";
 //        String c = "cccc";
 //        sample1(a,b,c);
-        int b = 9;
-        sample2(b);
+        
+        sample2(9);
 
     }
     public static void sample2(int b){
