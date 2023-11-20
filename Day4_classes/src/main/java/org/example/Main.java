@@ -8,10 +8,22 @@ public class Main {
         String c = "cccc";
         sample1(a,b,c);
 
-
     }
 
     public static void sample1(String a, String b, String c){
-        System.out.println(c + b + a);
+
+        int len = a.length() + b.length() + c.length();
+
+        if (len > 15){
+            System.out.println(a+c);
+        }else{
+            System.out.println(c+b+a);
+        }
+
+
+
+
+
+
     }
 }
