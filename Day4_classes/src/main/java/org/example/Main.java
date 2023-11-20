@@ -7,8 +7,8 @@ public class Main {
 //        String b = "bbbb";
 //        String c = "cccc";
 //        sample1(a,b,c);
-        
-        sample2(9);
+
+        sample2(0);
 
     }
     public static void sample2(int b){
@@ -17,7 +17,10 @@ public class Main {
         for (int i = 0; i < b; i++){
             a = a + "$";
             System.out.println(a);
+            if(b < 1){
+                System.out.println("$");
 
+            }
         }
 
     }
