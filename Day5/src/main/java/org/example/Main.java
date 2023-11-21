@@ -3,7 +3,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-    uzd1(2,"SS");
+    uzd1(3,"SS ");
     }
 
     public static void uzd1(int skaitlis, String vards){
