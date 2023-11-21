@@ -3,7 +3,24 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-    uzd1(3,"SS ");
+//    uzd1(9,"SS ");
+
+        int a = uzd2(5,9);
+        System.out.println(a);
+
+    }
+
+    public static int uzd2(int b, int c){
+
+        if (b > c){
+            
+            return b;
+        }else{
+
+            return c;
+        }
+
+
     }
 
     public static void uzd1(int skaitlis, String vards){
