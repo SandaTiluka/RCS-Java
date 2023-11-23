@@ -4,11 +4,18 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         int num1 = number1();
         int num2 = number2();
 
         String calcul = izvele();
+        int result = Calculation.action(int num1, int num2);
+        System.out.println(result);
+
+
+
+
 
     }
 
@@ -35,7 +42,8 @@ public class Main {
         String b = sc.nextLine();
 
         if (b.equals("+")) {
-            return "+";
+            return"+";
+
         }
         if (b.equals("-")) {
             return "-";
@@ -47,6 +55,7 @@ public class Main {
             return "/";
         } else {
             System.out.println("Kļūda! Ievadiet vēlreiz izvēlēto darbību");
+            String h = sc.nextLine();
             return "Kļūda";
         }
     }
