@@ -24,15 +24,15 @@ public class Tasks {
         List<String> stringList = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Cik vardus pievienosiet sarakstam?");
+        System.out.println("Cik vārdus pievienosiet sarakstam?");
         int skaitlis = sc.nextInt();
 
         for(int i = 0; i < skaitlis; i++){
-            System.out.println("Ievadiet vardus");
+            System.out.println("Ievadiet vārdus");
             String vards = sc.next();
             stringList.add(vards);
         }
-        System.out.println("Vai velaties izvadit visus vai konkretu vardu?");
+        System.out.println("Vai vēlaties izvadīt visus vai konkrētu vārdu?");
         String atbilde = sc.next();
 
         if(atbilde.equals("visu")){
@@ -40,7 +40,7 @@ public class Tasks {
                 System.out.println(stringList.get(i));
             }
         }
-        if(atbilde.equals("vardu")){
+        if(atbilde.equals("vārdu")){
             System.out.println("Kuru pēc kārtas vārdu?");
             int izvade = sc.nextInt();
             System.out.println(stringList.get(izvade));
