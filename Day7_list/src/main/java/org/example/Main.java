@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Tasks.task2();
+//        Tasks.task2();
 
 //        double[] b = {1,2.2,3,4,5};
 //        System.out.println(Tasks.biggestNumber(b));

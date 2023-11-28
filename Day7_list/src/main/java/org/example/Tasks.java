@@ -47,7 +47,19 @@ public class Tasks {
         }
 
 
+    }
 
+    public static int task3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet skaitli");
+        int input = sc.nextInt();
+        return input;
 
+        try {
+            input = sc.nextInt();
+        }
+        catch (Exception e){
+            input = 0;
+        }
     }
 }
