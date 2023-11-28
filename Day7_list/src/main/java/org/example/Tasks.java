@@ -3,6 +3,7 @@ package org.example;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 
 public class Tasks {
     public static double biggestNumber(double[] a){
@@ -28,14 +29,23 @@ public class Tasks {
 
         for(int i = 0; i < skaitlis; i++){
             System.out.println("Ievadiet vardus");
-            String vards = sc.nextLine();
+            String vards = sc.next();
             stringList.add(vards);
         }
-//        System.out.println("Vai velaties izvadit visus vai konkretu vardu?");
-//        String atbilde = sc.nextLine();
-//        if(atbilde.equals("visu")){
-//            System.out.println(stringList.get(i));
-//        }
+        System.out.println("Vai velaties izvadit visus vai konkretu vardu?");
+        String atbilde = sc.next();
+
+        if(atbilde.equals("visu")){
+            for(int i = 0; i < skaitlis; i++){
+                System.out.println(stringList.get(i));
+            }
+        }
+        if(atbilde.equals("vardu")){
+            System.out.println("Kuru pēc kārtas vārdu?");
+            int izvade = sc.nextInt();
+            System.out.println(stringList.get(izvade));
+        }
+
 
 
 
