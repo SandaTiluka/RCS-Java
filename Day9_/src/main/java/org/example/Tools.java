@@ -23,7 +23,7 @@ public class Tools {
             System.out.println("Ievadiet savu e-pastu");
             String email= sc.nextLine();
             sc.nextLine();
-
+            lst.add(new Pet(vards, tips, vecums, email));
         }
 
     }
@@ -31,6 +31,6 @@ public class Tools {
     public static void addPetlist(List<Pet> lst){
         List<Pet> list = new ArrayList<>();
 
-        lst.add(new Pet(vards, tips, vecums, email));
+
     }
 }
