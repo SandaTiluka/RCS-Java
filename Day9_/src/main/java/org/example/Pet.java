@@ -7,6 +7,12 @@ public class Pet {
     public String email;
 
     }
+    public Pet(String vards, String tips, int vecums,String email){
+    this.vards = vards;
+    this.tips = tips;
+    this.vecums = vecums;
+    this.email;
+    }
     public void print(){
         System.out.println(vards);
         System.out.println(tips);
