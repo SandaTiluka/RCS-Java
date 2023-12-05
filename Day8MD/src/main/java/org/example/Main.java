@@ -34,8 +34,9 @@ public class Main {
 
         }
         catch (InputMismatchException e){
-            b.course = sc.nextInt();
+
             System.out.println("Kļūda ievadē.Mēģiniet vēlreiz");
+            b.course = sc.nextInt();
         }
 
         return b;
@@ -64,7 +65,7 @@ public class Main {
 
     }
     public static List<Student> uzd3(int a){
-        List<Student> Studentlst = new ArrayList<>();
+
         List<Student> sar = samplist();
         for(int i = 0; i < a; i++){
             System.out.println("Studentu saraksts" + i + sar);
