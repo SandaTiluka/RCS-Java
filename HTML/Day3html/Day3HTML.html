@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Day3</title>
+        <link rel="stylesheet" href="day3.css">
+    </head>
+
+    <body>
+        <div class="input-form">
+        <input type="number" id="input1" class="testInput" placeholder="Ievadi skaitli">
+        <button id="btn11" class="btn11" onClick= "checknumber()">Apstiprināt!</button>
+        </div>
+
+        <div>
+            <button class="btn2" onclick="clickCount()">Spied pogu!</button>
+            <p id="count"></p>
+        </div>
+        
+
+        <script>
+            let count = 0;
+
+            function checknumber(){
+            let ievadesskaitlis = document.getElementById("input1").value;
+
+                if(ievadesskaitlis % 2 == 0){
+                    document.getElementById("input1").style.backgroundColor = "green";
+                 }
+                else{
+                    document.getElementById("input1").style.backgroundColor = "red";
+                }
+            }
+
+            function clickCount(){
+                count++;
+                alert("Tu esi klikšķinājis " + count + " reizes");
+            }
+            
+        </script>
+    </body>
+    
+</html>

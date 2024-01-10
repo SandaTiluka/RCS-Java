@@ -1,57 +1,98 @@
 <html>
     <head>
-    <meta charset="utf-8">
-    <title>Fluffy unicorn</title>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>Fluffy unicorn</title>
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-    <div class="backgroundPicture">
-        <p>Day 4</p>
-    </div>
-    <div class="input-form">
-        <input type="text" id="input1" class="testInput">
-        <button id="btn1" class="btn1" onClick="task1()">Klikšķini mani!</button>
-    </div>
-
-    <script>
-
-        // function task1() {
-            let userInput = document.getElementById("input1").value;
-            let arr = userInput.split(",");
-
-            let max = parseInt(arr[0]);
-            let min = parseInt(arr[0]);
             
-    
-            for(let i = 0; i<arr.length; i++){
-                console.log(arr[i]);
-                if(arr[i] > max){
-                    max = parseInt(arr[i]);
-                }
+        <!--Uzdevums 1.
+        <script>
+            function getMinMax(){
+                let userInput = document.getElementById("input1").value;
+                let arr = userInput.split(",");
 
-                if(arr[i] < min){
-                    min = parseInt(arr[i]);
-                }
-            }
-            if(parseInt.includes(arr)){
+                let max = arr[0];
+                let min = arr[0];
 
+                for(let i = 0; i<arr.length; i++){
+                    if(arr[i]>max){
+                        max = arr[i];
+                    }
+                    if(arr[i]<min){
+                        min = [i];
+                    }
+                }
+                alert(max);
+                alert(min);
+
+            }   
+        </script>
+    -->
+
+        <!--Uzdevums Nr.2
+        <div class="input-form2">
+                <p>Ievadi skaitļus</p>
+                <input type="text" id="input2" class="testInput2">
+                <button id="btn2" class="btn2" onClick="getNumber()">Klikšķini mani!</button>
+        </div>
+
+        <script>
+            function getNumber() {
+                let userInput = document.getElementById("input2").value;
+                let arr = userInput.split(",");
+                    
+                arr[i]= 0;
+                let numberCount = arr[i];
+                for(let i = 0; i < arr.length; i++){
+                    let num = arr[i];
+                       if(numberCount[num]){
+                        alert(num);
+                    }else{
+                        alert("Dublicate not found")
+                    }
+                }
             }
                 
-            alert(max);
-            alert(min);
-        }
+        </script>
+        -->
 
-        function task2() {
-            let userInput = document.getElementById("input1").value;
-            let arr = userInput.split(",");
-            let numbers = [];
-            let number = parseInt(input);
-            if(numbers.includes(number)){
-                alert("skaitlis divreiz ievadits")
+        <!--Uzdevums Nr.3-->
+        <div class="input-form">
+            <p>Ievadi skaitļus</p>
+            <input type="text" id="input3" class="testInput">
+            <button id="btn3" class="btn3" onClick="insertNumbers()">Klikšķini mani!</button>
+        </div>
+        <script>
+            function insertNumbers()
+            let x = searchNumber("input4");
+            let arrayInput = document.getElementById("input3").value;
+            let arr2 = arrayInput.split(",");
+            let allArr = arr[0];
+            
+
+            for(let i = 0; i<arr.length; i++){
+                if(arr[i]==searchNumber){
+                    alert("Skaitlis" + searchNumber + "ir atrasts")
+                }else{
+                    alert("Šāds skaitlis nav ievadīts")
+                }
             }
 
-        }
-    </script>
+            function searchNumber(document.getElementById)
+                  
+            
+        </script>
+
+        <div class="input-form">
+            <p>Pārbaudi skaitli</p>
+            <input type="text" id="input4" class="testInput">
+            <button id="btn4" class="btn4" onClick="searchNumber()">Spied, lai pārbaudītu!</button>
+        </div>
+
+        
+
     </body>
 </html>
    
