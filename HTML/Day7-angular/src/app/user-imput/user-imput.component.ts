@@ -11,6 +11,14 @@ import { FormsModule } from '@angular/forms';
 export class UserImputComponent implements OnInit {
   inputValue: string = "";
 
+  inputNumber1: string = "";
+  convertedInputNumber1 = parseInt(this.inputNumber1);
+
+  inputNumber2: string = "";
+  convertedInputNumber2 = parseInt(this.inputNumber1);
+
+
+
   constructor() {}
   ngOnInit(): void{
 
@@ -18,6 +26,7 @@ export class UserImputComponent implements OnInit {
 
   demoOut(): void{
     console.log(this.inputValue);
+    console.log(this.convertedInputNumber1+this.convertedInputNumber2)
   }
 
 }
