@@ -28,10 +28,10 @@ export class UserImputComponent implements OnInit {
     console.log(this.inputValue);
     
   }
-  
+
   demoOut(): void{
     
-    console.log(this.convertedInputNumber1 + this.convertedInputNumber2)
+    console.log()
   }
 
 }
