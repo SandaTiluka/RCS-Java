@@ -15,7 +15,7 @@ export class UserImputComponent implements OnInit {
   convertedInputNumber1 = parseInt(this.inputNumber1);
 
   inputNumber2: string = "";
-  convertedInputNumber2 = parseInt(this.inputNumber1);
+  convertedInputNumber2 = parseInt(this.inputNumber2);
 
 
 
@@ -26,7 +26,12 @@ export class UserImputComponent implements OnInit {
 
   demoOut(): void{
     console.log(this.inputValue);
-    console.log(this.convertedInputNumber1+this.convertedInputNumber2)
+    
+  }
+  
+  demoOut(): void{
+    
+    console.log(this.convertedInputNumber1 + this.convertedInputNumber2)
   }
 
 }
