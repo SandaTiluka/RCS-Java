@@ -5,13 +5,16 @@ import { AtnemsanaComponent } from './atnemsana/atnemsana.component';
 import { DalisanaComponent } from './dalisana/dalisana.component';
 import { SaskaititComponent } from './saskaitit/saskaitit.component';
 import { ReizinasanaComponent } from './reizinasana/reizinasana.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, 
-    AtnemsanaComponent, DalisanaComponent, SaskaititComponent, ReizinasanaComponent],
+    AtnemsanaComponent, DalisanaComponent,
+     SaskaititComponent, ReizinasanaComponent,
+    HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
