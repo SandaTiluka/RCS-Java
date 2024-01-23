@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-atnemsana',
@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './atnemsana.component.html',
   styleUrl: './atnemsana.component.css'
 })
-export class AtnemsanaComponent {
+export class AtnemsanaComponent implements OnInit {
   userInput1: number;
   userInput2: number;
   result: number;
 
   calculateSum(){
-    this.result= this.userInput1 + this.userInput2;
+    this.result= this.userInput1 - this.userInput2;
   }
 
 }

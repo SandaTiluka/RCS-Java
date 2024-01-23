@@ -13,6 +13,6 @@ export const routes: Routes = [
     {path: 'atnemt', component: AtnemsanaComponent},
     {path: 'reizinat', component: ReizinasanaComponent},
     {path: 'dalit', component: DalisanaComponent},
-    {path: 'header', component: HeaderComponent},
+    
     
 ];

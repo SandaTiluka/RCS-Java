@@ -1,4 +1,15 @@
-<p>atnemsana works!</p>
+
 <div>
     <input type="number" id="userInput1"[{ngModel}]= "userInput1"/>
 </div>
+<button (click)="ievade()">Ievadiet vārdu</button>
+
+<p>{{inputValue}}</p>
+
+<p>Ievadiet skaitļus</p>
+<input type="text" [(ngModel)] = "inputNumber1" />
+<input type="text" [(ngModel)] = "inputNumber2" />
+
+<button (click)="izvade()">Saskaitīt</button>
+<p>Rezultāts:</p>
+
