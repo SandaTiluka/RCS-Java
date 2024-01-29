@@ -4,5 +4,16 @@
     <p>{{animal.age}}</p>
     <p>{{animal.breed}}</p>
     <img {{[src]="picture"}} >
-    <p>----------------</p>
+    
 </div>
+
+<div class="animalNumber">
+    <input type="text" placeholder="Enter animal number" [(ngModel)]="textInput1">
+    <button (click)="buttnClick">Submit</button>
+
+</div>
+<div class="changeName">
+    <input type="text" placeholder="Change animal Name" [(ngModel)]="textInput2">
+    <button (click)="buttnClickChange">Change</button>
+</div>
+
