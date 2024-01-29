@@ -1,1 +1,7 @@
-<p>dalisana works!</p>
+<div class="dalisana">
+    <p>Ievadiet skaitļus</p>
+    <input type= "number" [(ngModel)]= "NumInput1" placeholder="Ievadi 1. skaitli" />
+    <input type= "number" [(ngModel)] = "NumInput2" placeholder="Ievadi 2. skaitli" />
+    <button (click)="perform()">Dalīt</button>
+    <p>Rezultāts: {{ result }}</p>
+</div>

@@ -1,21 +1,21 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-atnemsana',
   standalone: true,
-  imports: [AtnemsanaComponent, Component, NgModule,FormsModule],
+  imports: [FormsModule],
   templateUrl: './atnemsana.component.html',
   styleUrl: './atnemsana.component.css'
 })
 export class AtnemsanaComponent {
-  userInput1: number;
-  userInput2: number;
-  result: number;
+  NumInput1: number = 0;
+  NumInput2: number = 0;
+  result: number = 0;
 
-  calculateSum(){
-    this.result= this.userInput1 - this.userInput2;
+  perform(): void {
+    this.result= this.NumInput1 - this.NumInput2;
   }
 
 }

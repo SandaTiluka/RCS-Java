@@ -6,22 +6,24 @@ import { DalisanaComponent } from './dalisana/dalisana.component';
 import { SaskaititComponent } from './saskaitit/saskaitit.component';
 import { ReizinasanaComponent } from './reizinasana/reizinasana.component';
 import { HeaderComponent } from './header/header.component';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-@NgModule({
-  imports: [FormsModule],
-})
 
-export class AppModule{}
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, 
-    AtnemsanaComponent, DalisanaComponent,
-     SaskaititComponent, ReizinasanaComponent,
-    HeaderComponent],
+  imports: [CommonModule,
+    RouterOutlet, 
+    AtnemsanaComponent, 
+    DalisanaComponent,
+    SaskaititComponent, 
+    ReizinasanaComponent,
+    HeaderComponent,
+    FormsModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
