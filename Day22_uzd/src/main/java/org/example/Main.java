@@ -11,7 +11,7 @@ public class Main {
     public static Employee list(){
         Scanner sc = new Scanner(System.in);
 
-        Employee b = new Employee();
+        Employee b = new Employee(list().name, list().lastName, list().workExp);
         System.out.println("Ievadiet vārdu");
         b.name = sc.nextLine();
         System.out.println("Ievadiet uzvārdu");

@@ -5,7 +5,7 @@ public class Employee {
     public String lastName;
     public int workExp;
 
-    public Employee(String name, String lastName, int workExp){
+    public Employee (String name, String lastName, int workExp){
         this.name = name;
         this.lastName = lastName;
         this.workExp = workExp;
