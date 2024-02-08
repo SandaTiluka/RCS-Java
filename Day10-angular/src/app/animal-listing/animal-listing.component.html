@@ -7,13 +7,10 @@
     
 </div>
 
-<div class="animalNumber">
-    <input type="text" placeholder="Enter animal number" [(ngModel)]="textInput1">
-    <button (click)="buttnClick">Submit</button>
-
-</div>
-<div class="changeName">
-    <input type="text" placeholder="Change animal Name" [(ngModel)]="textInput2">
+<div >
+    <input type="number" id="animalNumber" [(ngModel)]="animalNumber"  placeholder="Enter number" >
+    <input type="text" [(ngModel)]="newAnimalName" id="newAnimalName" placeholder="Change animal Name" >
     <button (click)="buttnClickChange">Change</button>
 </div>
+
 

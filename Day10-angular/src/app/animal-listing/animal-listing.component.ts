@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-animal-listing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './animal-listing.component.html',
   styleUrl: './animal-listing.component.css'
 })
@@ -33,6 +34,8 @@ export class AnimalListingComponent implements OnInit {
       
   ]
 
+
+  
   constructor(){
     console.log();
   }
@@ -41,6 +44,16 @@ export class AnimalListingComponent implements OnInit {
     console.log();
   }  
   
+  buttnClickChange() void {
+    if(this.animalNumber >=0 && this.animalNumber < this.lst.length){
+      this.lst[this.animalNumber].name = this.newAnimalName;
+
+    }
+  }
+
+
+
+
 }
 
 export interface Animal {
@@ -49,3 +62,5 @@ export interface Animal {
   breed : string,
   picture: string
 }
+
+
