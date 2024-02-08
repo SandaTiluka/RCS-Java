@@ -1,6 +1,7 @@
 package org.example;
 import com.google.gson.Gson;
-import org.xerial;
+import java.sql.Connection;
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
@@ -21,7 +22,11 @@ public class Main {
         Gson g = new Gson();
         String json = g.toJson(b);
 
-        SqlLite s = new
+        public static Connection(){
+            String url = "jdbc:sqlite:C:\\Users\\Liepziedi\\Desktop\\Coding School\\SQL";
+        }
+
+
 
     }
 

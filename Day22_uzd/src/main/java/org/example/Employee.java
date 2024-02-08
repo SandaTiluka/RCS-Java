@@ -11,9 +11,13 @@ public class Employee {
         this.workExp = workExp;
     }
 
-    public void print(){
-        System.out.println();
+    public void print() {
+        System.out.println("Info ");
+        System.out.println("Name: " + name);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Work experience: " + workExp);
     }
+
 
 }
 
