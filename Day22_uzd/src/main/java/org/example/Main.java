@@ -1,27 +1,31 @@
 package org.example;
-
+import com.google.gson.Gson;
+import org.xerial;
 import java.util.Scanner;
 public class Main {
-    public static void main(){
-        list();
-    }
+    public static void main(String[] args){
 
 
-
-    public static Employee list(){
         Scanner sc = new Scanner(System.in);
 
-        Employee b = new Employee(list().name, list().lastName, list().workExp);
-        System.out.println("Ievadiet vārdu");
-        b.name = sc.nextLine();
-        System.out.println("Ievadiet uzvārdu");
-        b.lastName = sc.next();
-        System.out.println("Ievadiet darba stāžu");
-        b.workExp = sc.nextInt();
 
-        return b;
+        System.out.println("Ievadiet vārdu");
+        String name = sc.nextLine();
+        System.out.println("Ievadiet uzvārdu");
+        String lastName = sc.next();
+        System.out.println("Ievadiet darba stāžu");
+        int workExp = sc.nextInt();
+
+        Employee b = new Employee(name, lastName, workExp);
+
+        Gson g = new Gson();
+        String json = g.toJson(b);
+
+        SqlLite s = new
 
     }
+
+
 
 
 }
