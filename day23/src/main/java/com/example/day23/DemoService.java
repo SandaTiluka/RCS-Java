@@ -21,17 +21,9 @@ public class DemoService {
 
     public Employee getEmployee(int id){
         Connection conn = Database.connect();
-        List<Employee> lst = Database.getEmployees(conn);
+        Employee e = Database.getEmployee(conn);
 
-        Scanner sc = new Scanner(System.in);
-        
 
-        for(Employee e : lst){
-            int findEmployee = sc.nextInt();
-            if(e.id == findEmployee){
-                return e;
-            }
-        }
          return null;
     }
 

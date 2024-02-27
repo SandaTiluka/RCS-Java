@@ -40,5 +40,26 @@ public class Database {
 
         return emp;
     }
+    public static Employee getEmployee(Connection conn, int id){
+        String sql = "SELECT * FROm employee WHERE id=" + id;
+        Employee emp = new Employee();
+
+        try {
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+
+            while (rs.next()) {
+                emp = new Employee( rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("lastName"),
+                        rs.getInt("workExp")));
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        return emp;
+
+    }
 }
 
