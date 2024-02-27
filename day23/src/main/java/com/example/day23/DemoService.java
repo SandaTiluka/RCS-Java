@@ -13,29 +13,21 @@ public class DemoService {
 
     public List<Employee> getEmployees(){
         Connection conn = Database.connect();
-
-        List<Employee> lst = new ArrayList<>();
-
-        lst.add(new Employee(1, "Janis", "Berzins", 1));
-        lst.add(new Employee(2, "Edgars", "Ozols", 4));
-        lst.add(new Employee(3, "Juris", "Klava", 3));
+        List<Employee> lst = Database.getEmployees(conn);
 
         return lst;
     }
 
-    public Employee getEmployee(int id) {
-        List<Employee> lst = new ArrayList<>();
-
-        lst.add(new Employee(1, "Janis", "Berzins", 1));
-        lst.add(new Employee(2, "Edgars", "Ozols", 4));
-        lst.add(new Employee(3, "Juris", "Klava", 3));
+    public Employee getEmployee(int id){
+        Connection conn = Database.connect();
+        List<Employee> lst = Database.getEmployees(conn);
 
         for(Employee e : lst){
             if(e.id == id){
                 return e;
             }
         }
-        return null;
+         return null;
     }
 
 

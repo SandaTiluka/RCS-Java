@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Database {
     public static Connection connect() {
-        String url = "jdbc:sqlite:C:\\Users\\Liepziedi\\Desktop\\Coding School\\SQL\\Day22.db";
+        String url = "jdbc:sqlite:C:\\Users\\Liepziedi\\Desktop\\Coding School\\SQL\\day22.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
@@ -20,8 +20,8 @@ public class Database {
         return conn;
     }
 
-    public static List<Employee> getEmployee(Connection conn) {
-        String sql = "SELECT * FROM employee";
+    public static List<Employee> getEmployees(Connection conn) {
+        String sql = "SELECT * FROM employee id";
         List<Employee> emp = new ArrayList<>();
 
         try {

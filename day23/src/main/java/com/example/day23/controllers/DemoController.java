@@ -24,8 +24,6 @@ public class DemoController {
     @Autowired
     private DemoService demoService;
 
-    @Autowired
-    private Database database;
 
 
     @RequestMapping(value="/employees", method= RequestMethod.GET)
@@ -34,7 +32,7 @@ public class DemoController {
         return demoService.getEmployees();
     }
 
-    @RequestMapping(value="/employee/{id}", method= RequestMethod.GET)
+    @RequestMapping(value="/employees/{id}", method= RequestMethod.GET)
     Employee getEmployee(@PathVariable int id){
 
         return demoService.getEmployee(id);
