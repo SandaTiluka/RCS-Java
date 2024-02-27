@@ -4,10 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Database {
-    public static Connection employee() {
-        String url = "jdbc:sqlite:C:\\Users\\Liepziedi\\Desktop\\chinook.db";
+    public static Connection connect() {
+        String url = "jdbc:sqlite:C:\\Users\\Liepziedi\\Desktop\\Coding School\\SQL\\Day22.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
@@ -18,23 +20,25 @@ public class Database {
         return conn;
     }
 
-    public static void readEmployee(Connection conn) {
+    public static List<Employee> getEmployee(Connection conn) {
         String sql = "SELECT * FROM employee";
+        List<Employee> emp = new ArrayList<>();
 
         try {
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(sql);
-            while (rs.next()) {
-                System.out.println(rs.getString("id"));
-                System.out.println(rs.getString("name"));
-                System.out.println(rs.getString("lastName"));
-                System.out.println(rs.getInt("workExp"));
-                System.out.println("-------");
-            }
 
+            while (rs.next()) {
+                emp.add(new Employee( rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("lastName"),
+                        rs.getInt("workExp")));
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+        return emp;
     }
 }
 

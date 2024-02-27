@@ -12,6 +12,8 @@ import java.util.List;
 public class DemoService {
 
     public List<Employee> getEmployees(){
+        Connection conn = Database.connect();
+
         List<Employee> lst = new ArrayList<>();
 
         lst.add(new Employee(1, "Janis", "Berzins", 1));
@@ -36,9 +38,5 @@ public class DemoService {
         return null;
     }
 
-    public static  void main(String[] args){
-        Connection conn = Database.employee();
-        Database.readEmployee(conn);
 
-    }
 }

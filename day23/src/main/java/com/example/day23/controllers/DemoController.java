@@ -28,15 +28,16 @@ public class DemoController {
     private Database database;
 
 
-    @RequestMapping(value="/database", method= RequestMethod.GET)
-    List<Employee> readEmployees(){
+    @RequestMapping(value="/employees", method= RequestMethod.GET)
+    List<Employee> getEmployees(){
         System.out.println("This is random message");
-        return database.readEmployee();
+        return demoService.getEmployees();
     }
 
-    @RequestMapping(value="/database/{id}", method= RequestMethod.GET)
+    @RequestMapping(value="/employee/{id}", method= RequestMethod.GET)
     Employee getEmployee(@PathVariable int id){
-        return database.readEmployee(id);
+
+        return demoService.getEmployee(id);
     }
 
 
