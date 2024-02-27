@@ -21,7 +21,7 @@ public class Database {
     }
 
     public static List<Employee> getEmployees(Connection conn) {
-        String sql = "SELECT employee.id FROM employee ";
+        String sql = "SELECT * FROM employee ";
         List<Employee> emp = new ArrayList<>();
 
         try {
