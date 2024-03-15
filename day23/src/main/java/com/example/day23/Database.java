@@ -41,8 +41,8 @@ public class Database {
         return emp;
     }
     public static Employee getEmployee(Connection conn, int id){
-        String sql = "SELECT * FROm employee WHERE id=" + id;
-        Employee emp = new Employee();
+        String sql = "SELECT * FROM employee WHERE id=" + id;
+        Employee emp = new Employee() ;
 
         try {
             Statement stm = conn.createStatement();
@@ -52,7 +52,7 @@ public class Database {
                 emp = new Employee( rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("lastName"),
-                        rs.getInt("workExp")));
+                        rs.getInt("workExp"));
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

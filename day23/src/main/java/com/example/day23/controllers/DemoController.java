@@ -32,7 +32,7 @@ public class DemoController {
         return demoService.getEmployees();
     }
 
-    @RequestMapping(value="/employees/{id}", method= RequestMethod.GET)
+    @RequestMapping(value="/employee/{id}", method= RequestMethod.GET)
     Employee getEmployee(@PathVariable int id){
 
         return demoService.getEmployee(id);
