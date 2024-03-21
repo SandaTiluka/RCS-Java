@@ -1,37 +1,37 @@
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #102a16;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: black;
-    background-color: #494a43;
-  }
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #102a16;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black;
+  background-color: #494a43;
+}
   
-  input[type=submit] {
-    width: 100%;
-    background-color: #1e301f;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input[type=submit] {
+  width: 100%;
+  background-color: #1e301f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
   
-  input[type=submit]:hover {
-    background-color: #161806;
-    color: rgb(237, 237, 237);
-  }
+input[type=submit]:hover {
+  background-color: #161806;
+  color: rgb(237, 237, 237);
+}
   
-  div {
-    border-radius: 5px;
-    background-color: #2f2727;
-    padding: 20px;
-    
-  }
-  label{
-    color: rgb(237, 237, 237);
-  }
+div {
+  border-radius: 5px;
+  background-color: #2f2727;
+  padding: 20px;
+}
+
+label{
+  color: rgb(237, 237, 237);
+}
