@@ -3,18 +3,18 @@ html {
     margin: 0;
   }
   
-  .mainpicture{
-    background-image: url("../../assets/titulbilde.jpg");
+.mainpicture{
+  background-image: url("../../assets/titulbilde.jpg");
     
-    height: 50vh; 
+  height: 50vh; 
    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
